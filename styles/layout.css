@@ -1,0 +1,144 @@
+body {
+	margin: 0;
+	padding: 0;
+	background: url('../resources/escheresque_ste.png') rgb(0, 0, 0);
+
+	font-size: 14pt;
+	font-family: 'Myriad Pro', 'Helvetica Neue', 'Arial', sans-serif;
+
+	color: black;
+	-webkit-font-smoothing: antialiased;
+}
+
+h1, h2, h3, h4, h5, h6, p {
+	margin: 0;
+}
+
+h1, h2, h3, h4, h5, h6 {
+	font-family: 'Exo', sans-serif;
+}
+
+#content {
+	position: relative;
+	width: 768px;
+	margin: 24px auto 24px auto; /* #spacer at the bottom takes care of padding the bottom edge */
+
+	background: rgb(253, 253, 253);
+	box-shadow: 0 2px 4px 4px rgba(0, 0, 0, 0.6);
+	-webkit-border-radius: 8px;	
+
+	padding: 0 0 24px 0;
+}
+
+#hero {
+	position: relative;
+	overflow: hidden;
+	-webkit-border-radius: 8px 8px 0 0;		
+	width: 100%;
+	height: 384px;
+	color: white;
+
+	text-shadow: 0 2px 3px rgba(0, 0, 0, 0.6);
+}
+
+#title {
+	position: absolute;
+	bottom: 44px;
+	left: 24px;
+	font-size: 2em;
+}
+
+#subtitle {
+	position: absolute;
+	bottom: 20px;
+	left: 24px;
+
+	opacity: 0.75;
+}
+
+#background {
+	background: url('../photos/img_hero.jpg') no-repeat top center;
+	background-size: cover;
+	box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.4);
+	width: 100%;
+	height: 100%;
+}
+
+#overview {
+	 margin: 24px;
+}
+
+#application-download {
+	width: 128px;
+	float: left;
+	margin: 0 12px 0 0;
+	text-align: center;
+}
+
+#application-download p {
+	top: 64px;
+	width: 100%;
+	text-indent: 0;
+}
+
+#pdf-icon {
+	height: 64px;
+	width: 128px;
+	left: 0;
+	margin: 0 0 4px 0;
+	background: top center url('../resources/form.png') no-repeat;
+}
+
+.description {
+	min-height: 100px;
+	position: relative;
+	border-bottom: 1px solid #fff;
+	background: #ddd;
+	padding: 24px;
+}
+
+.description-title {
+    display: block;
+    margin-bottom: 24px;
+}
+
+#prereq-desc-text {
+	margin: 0;
+}
+
+#spacer {
+	width: 100%;
+	height: 24px;
+	position: relative;
+}
+
+#contact-info {
+	margin: 24px 0 0 24px;
+}
+
+.clearfix:after { 
+   content: " ";
+   display: block; 
+   height: 0; 
+   clear: both;
+}
+
+@media (max-width: 768px) {
+	#content {
+		-webkit-border-radius: 0;
+		margin: 0;
+		width: 100%;	 
+	}
+
+	#hero {
+		-webkit-border-radius: 0;
+	}
+
+	#background {
+		box-shadow: none;
+	}
+
+	#hero {
+		height: 192px;
+	}	
+}
